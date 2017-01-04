@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nazrin.facebook.MainActivity"
+    android:background="@color/gray">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/imageIcon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/icon"
+             />
+
+        <TextView
+            android:id="@+id/pageName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="THE NEXT WEB"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/imageIcon"
+            android:layout_marginLeft="20dp"
+            android:layout_alignTop="@+id/imageIcon"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/postTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30 min."
+            android:textSize="15dp"
+            android:layout_toRightOf="@+id/imageIcon"
+            android:layout_below="@+id/pageName"
+            android:layout_alignLeft="@+id/pageName"
+            android:layout_marginTop="7dp"
+            />
+        <ImageView
+            android:id="@+id/publicity"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/publicity"
+            android:layout_toRightOf="@+id/postTime"
+            android:layout_alignBottom="@+id/postTime"/>
+        <ImageView
+            android:id="@+id/below"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/below"
+            android:layout_marginTop="-5dp"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/mainText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This flower is the best one for Naz"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/imageIcon"
+            android:layout_marginTop="10dp"/>
+
+<RelativeLayout
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_below="@+id/mainText"
+android:background="@drawable/border_style"
+android:layout_marginTop="5dp"
+android:layout_marginBottom="5dp"
+android:id="@+id/newsborder">
+
+<ImageView
+    android:id="@+id/mainImage"
+    android:layout_width="wrap_content"
+    android:layout_height="200dp"
+    android:src="@drawable/alivgo"
+    android:layout_marginBottom="15dp"/>
+<TextView
+    android:id="@+id/news"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="The bes of Naz"
+    android:textColor="@color/black"
+    android:layout_below="@+id/mainImage"
+    android:shadowColor="@color/black"
+    android:textSize="20dp"
+    android:textStyle="bold"
+    android:layout_marginLeft="10dp"/>
+<!--pamiyorum image hissesini-->
+
+<TextView
+    android:id="@+id/site"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="15dp"
+    android:text="nazcom"
+    android:layout_below="@+id/news"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="10dp"/>
+</RelativeLayout>
+
+        <ImageView
+            android:id="@+id/like"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/like"
+            android:layout_below="@id/newsborder"
+            android:layout_marginTop="5dp"
+            />
+        <ImageView
+            android:id="@+id/heart"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/heart"
+            android:layout_toRightOf="@id/like"
+            android:layout_marginTop="5dp"
+            android:layout_alignBottom="@+id/like"
+            />
+        <ImageView
+            android:id="@+id/smile"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/smile"
+            android:layout_below="@id/newsborder"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/heart"
+            android:layout_alignBottom="@+id/like"
+            android:layout_toLeftOf="@+id/postTime"
+            android:layout_toStartOf="@+id/postTime" />
+        <TextView
+            android:id="@+id/likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="280 like"
+            android:layout_toRightOf="@id/smile"
+            android:layout_alignBottom="@+id/like"
+            android:layout_marginBottom="7dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="270 comment"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/likes"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#c0c0c0"
+            android:id="@+id/line"
+            android:layout_below="@id/like"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="5dp"
+            />
+
+
+            <RelativeLayout
+                android:id="@+id/likebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/like"
+                    android:id="@+id/beyen"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/beyen"
+                    android:text="Like"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="3dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    />
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/commentbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/likebutton"
+            android:layout_below="@id/line"
+            android:layout_marginLeft="33dp">
+            <!--center de etmek-->
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/like"
+                android:id="@+id/koment"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/koment"
+                android:text="Comment"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sharebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/commentbutton"
+            android:layout_below="@id/line"
+            android:layout_marginLeft="22dp">
+            <!--center de etmek-->
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/like"
+                android:id="@+id/paylash"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/paylash"
+                android:text="Share"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                />
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
